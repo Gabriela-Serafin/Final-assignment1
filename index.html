@@ -3,23 +3,26 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>Form</title>
+    <link rel="stylesheet" href="StyleSheet.css" />
 </head>
 <body>
-    <section>
+    <section class="section1">
         <form onsubmit="validateForm(event)">
             <div class="form-group">
-                <label for="name">Full name:</label>
+                <label for="name" class="label">Full name:</label>
                 <input type="text" id="name" class="form-input" />
             </div>
             <div class="form-group">
-                <label for="email">Enter your email:</label>
+                <label for="email" class="label">Enter your email:</label>
                 <input type="email" id="email" name="email" class="form-input" />
             </div>
             <div class="form-group">
-                <label for="age">Age:</label>
+                <label for="age" class="label">Age:</label>
                 <input type="number" id="age" class="form-input" />
             </div>
+            
+            <button type="submit" class="button1">Submit</button>
         </form>
     </section>
 </body>
