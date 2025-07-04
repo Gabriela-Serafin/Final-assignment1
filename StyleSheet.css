@@ -76,15 +76,26 @@ body{
     box-sizing: border-box;
 
 }
-#message{
+#message {
     padding: 10px;
+    font-family: 'Lucida Sans';
 }
 
-#people-list li {
+#people-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+    padding: 0;
+}
+
+#people-list div {
     background-color: lavenderblush;
-    border: 1px solid white;
+    border: 1px solid #ffe3ec;
     border-radius: 10px;
     padding: 10px 15px;
     margin-bottom: 10px;
     font-family: 'Lucida Sans';
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
